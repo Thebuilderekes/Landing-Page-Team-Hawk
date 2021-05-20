@@ -22,6 +22,11 @@
   height: 60px;
 }
 
+.container .nav-header .hamburger {
+
+  display: none;
+}
+
 .container .nav-header ul {
   display: flex;
   justify-content: center;
@@ -240,7 +245,10 @@ footer .footer__paragraph {
 @media screen  and (max-width: 768px) {
 
   
-
+body {
+  width: 100%;
+  height: 1000px;
+}
 .container .nav-header .logo .zuri-logo {
   position: absolute;
   top: 20px;
@@ -249,14 +257,324 @@ footer .footer__paragraph {
   height: 60px;
 }
 
+.container .nav-header .hamburger {
+  display: block;
+  position: absolute;
+  left: 700px;
+  width: 50px;
+  height: 50px;
+  
+}
+
+.container .nav-header ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  float: right;
+position: absolute;
+display: none;
+top: 100px;
+left: 300px;
+}
+
+
+.container .nav-header .show {
+  display: block;
+}
+
+.container .nav-header ul li{
+ line-height: 30px;
+ font-weight: 700;
+}
+
+.container .nav-header ul li:last-child{
+display: none;
+}
+
+
 .container .nav-header ul {
 
   margin-left: 70px;
 }
 
-.container .nav-header ul li a{
+.container .nav-header ul li a {
 
-  font-size: 13px;
+
+  color: #ffffff;
+  font-size: 20px;
+
 }
 
+
+.banner {
+  height: 700px;
 }
+.banner__flex--1{
+
+  width: 50%;
+
+}
+.banner__flex--1 h1 {
+  color: #f2f2f2;
+  font-size: 36px;
+}
+
+.banner__flex--1 p {
+
+  font-size: 20px;
+}
+
+.banner__flex--2 {
+
+  width: 50%;
+}
+
+.banner-img {
+  margin-top: 10px;
+  width: 400px;
+  height: 500px;
+}
+
+.banner__flex--1 .btn1 {
+  display: flex;
+  padding-top: 10px;
+}
+.banner__flex--1 .btn1 .join-us-btn {
+  color: #000000;
+  background-color: #f2f2f2;
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  border-radius: 30px;
+}
+.banner__flex--1 .btn1 .contact-us-btn {
+  background-color: #104079;
+  width: 150px;
+  height: 40px;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+
+.main-wrapper {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+}
+.sign-up__heading {
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.reg-steps {
+  background-color: #e4ebf7;
+  height: 900px;
+}
+
+.find {
+  margin-left: 30px;
+}
+
+form {
+  width: 90%;
+  height: 1000px;
+}
+.email {
+  margin-right: 458px ;
+  width: 100%;
+ }
+
+ .how-did {
+  margin-right: 458px ;
+  width: 100%;
+ }
+
+.input-group .input-box .sign-up-form {
+    margin-bottom: 50px;
+}
+footer {
+  margin-top: 850px;
+
+}
+
+footer .footer__paragraph {
+  font-size: 12px;
+}
+
+
+}
+
+
+
+@media screen  and (max-width: 375px) {
+
+  
+  body {
+    width: 100%;
+    height: 1000px;
+  }
+  .container .nav-header .logo .zuri-logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 251px;
+    height: 60px;
+  }
+  
+  .container .nav-header .hamburger {
+    display: block;
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    
+  }
+  
+  .container .nav-header ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    float: right;
+  position: absolute;
+  display: none;
+  top: 100px;
+  left: 50px;
+  }
+  
+  
+  .container .nav-header .show {
+    display: block;
+  }
+  
+  .container .nav-header ul li{
+   line-height: 30px;
+   font-weight: 700;
+  }
+  
+  .container .nav-header ul li:last-child{
+  display: none;
+  }
+  
+  
+  .container .nav-header ul {
+  
+    margin-left: 70px;
+  }
+  
+  .container .nav-header ul li a {
+  
+  
+    color: #ffffff;
+    font-size: 20px;
+  
+  }
+  
+  
+  .banner {
+    height: 700px;
+  }
+  .banner__flex--1{
+  
+    width: 60%;
+  
+  }
+  .banner__flex--1 h1 {
+    color: #f2f2f2;
+    font-size: 36px;
+  }
+  
+  .banner__flex--1 p {
+  
+    font-size: 20px;
+  }
+  
+  .banner__flex--2 {
+  
+    width: 40%;
+  }
+  
+  .banner-img {
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .banner__flex--1 .btn1 {
+    display: flex;
+    padding-top: 10px;
+  }
+  .banner__flex--1 .btn1 .join-us-btn {
+    color: #000000;
+    background-color: #f2f2f2;
+    width: 100px;
+    height: 40px;
+  
+    border: none;
+    border-radius: 30px;
+  }
+  .banner__flex--1 .btn1 .contact-us-btn {
+    background-color: #104079;
+    width: 150px;
+    height: 40px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+  
+  
+  .main-wrapper {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sign-up__heading {
+    padding-top: 50px;
+    margin-left: 30px;
+  }
+  
+  .reg-steps {
+    background-color: #e4ebf7;
+    height: 900px;
+  }
+  
+  .find {
+    margin-left: 30px;
+  }
+  
+  form {
+    width: 90%;
+    height: 1000px;
+  }
+  .email {
+    margin-right: 458px ;
+    width: 100%;
+   }
+  
+   .how-did {
+    margin-right: 458px ;
+    width: 100%;
+   }
+  
+  .input-group .input-box .sign-up-form {
+      margin-bottom: 50px;
+  }
+  footer {
+    margin-top: 850px;
+  
+  }
+  
+  footer .footer__paragraph {
+    font-size: 12px;
+  }
+  
+  
+  }
+  
